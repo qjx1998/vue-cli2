@@ -3,7 +3,7 @@
     <div class="tab-nav-item" @click="link">
         <slot v-if="!isActive" name="active"></slot>
         <slot v-else name="inActive"></slot>
-        <div :class="{textColor: !isActive}" :style="{ color: fontColor }"><slot name="eachItem"></slot></div>
+        <div :style="myColor"><slot name="eachItem"></slot></div>
     </div>
   </div>
 </template>
@@ -29,7 +29,10 @@ export default {
     computed:{
       isActive(){
         return this.$route.path.indexOf(this.query) === -1;
-      } 
+      },
+      myColor(){
+        return this.isActive ? { } : { color: this.fontColor };
+      }
     },
   methods: {
     link(){
