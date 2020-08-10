@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" >
+  <div class="wrapper">
     <slot></slot>
   </div>
 </template>
@@ -10,7 +10,7 @@ export default {
   props: {
       bgC: {
           type: String,
-          default: ''
+          default: '#f4f4f4'
       }
   }
 }

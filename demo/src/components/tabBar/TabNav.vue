@@ -33,7 +33,7 @@ export default {
     },
   methods: {
     link(){
-      this.$router.push(this.query);
+      this.$router.replace(this.query);
     }  
   }
 }
