@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NavImg from './components/tabBar/NavImg'
+import NavImg from 'component/tabBar/NavImg'
 export default {
   name: 'App',
   components: { NavImg },
